@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧭 Навигационный помощник</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🧭 Навигационный помощник</h1>
+        <div class="video-container">
+            <video id="webcam" autoplay playsinline muted></video>
+        </div>
+        <div class="controls">
+            <button id="startBtn" class="btn start">▶️ Запуск навигации</button>
+            <button id="stopBtn" class="btn stop" disabled>⏹️ Остановить</button>
+        </div>
+        <div id="status" class="status">Нажмите "Запуск навигации" для начала</div>
+        <div id="objects" class="objects"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

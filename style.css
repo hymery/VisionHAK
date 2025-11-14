@@ -1,0 +1,17 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #000; color: #FFF; font-family: Arial; padding: 10px; text-align: center; }
+h1 { color: #0F0; margin: 15px 0; font-size: 24px; }
+.video-container { width: 100%; max-width: 400px; margin: 0 auto 20px; border: 3px solid #0F0; border-radius: 10px; overflow: hidden; }
+#webcam { width: 100%; height: auto; display: block; background: #111; }
+.controls { margin: 20px 0; }
+.btn { background: #0F0; color: #000; border: none; padding: 15px 25px; font-size: 18px; margin: 5px; border-radius: 25px; cursor: pointer; font-weight: bold; min-width: 200px; }
+.btn:disabled { background: #555; color: #888; cursor: not-allowed; }
+.btn.stop { background: #F44; color: #FFF; }
+.status { background: #1A1A1A; padding: 15px; border-radius: 10px; margin: 15px 0; border-left: 4px solid #0F0; font-size: 16px; min-height: 60px; display: flex; align-items: center; justify-content: center; }
+.objects { background: #1A1A1A; padding: 15px; border-radius: 10px; margin: 10px 0; border-left: 4px solid #07F; font-size: 14px; text-align: left; }
+.object-item { margin: 5px 0; padding: 5px; background: #2A2A2A; border-radius: 5px; display: flex; justify-content: space-between; }
+.distance-close { color: #F44; font-weight: bold; }
+.distance-medium { color: #FA0; }
+.distance-far { color: #0F0; }
+.loading { color: #0F0; animation: pulse 1.5s infinite; }
+@keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
